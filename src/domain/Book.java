@@ -1,6 +1,6 @@
 package domain;
 
-public class Book extends AbstractEntity implements Comparable<Book>{
+public class Book extends AbstractEntity implements Comparable<Book> {
 
     private final String title;
     private final String author;
@@ -11,14 +11,14 @@ public class Book extends AbstractEntity implements Comparable<Book>{
     private boolean isaAvailable;
     private final String borrowerName;
 
-    public Book(String title, String author, String publisher, String genre, String language, int numberOfPage, String borrowerName) {
+    public Book(String title, String author, String publisher, String genre, String language, int numberOfPage) {
         this.title = title;
         this.author = author;
         this.publisher = publisher;
         this.genre = genre;
         this.language = language;
         this.numberOfPage = numberOfPage;
-        this.borrowerName = borrowerName;
+        this.borrowerName = null;
         this.isaAvailable = true;
     }
 
@@ -61,14 +61,14 @@ public class Book extends AbstractEntity implements Comparable<Book>{
     @Override
     public void display() {
         System.out.println("~~~ Book ~~~" +
-                "Title: "+title+
-                "Author: "+author+
-                "Publisher: "+publisher+
-                "Genre: "+genre+
-                "Language: "+language+
-                "Number Of Page: "+numberOfPage+
-                "Is Available? "+isaAvailable+
-                "Borrower Name: "+borrowerName);
+                "Title: " + title +
+                "Author: " + author +
+                "Publisher: " + publisher +
+                "Genre: " + genre +
+                "Language: " + language +
+                "Number Of Page: " + numberOfPage +
+                "Is Available? " + isaAvailable +
+                "Borrower Name: " + borrowerName);
     }
 
     @Override
