@@ -9,7 +9,7 @@ public class Book extends AbstractEntity implements Comparable<Book> {
     private final String language;
     private final int numberOfPage;
     private boolean isAvailable;
-    private final String borrowerName;
+    private String borrowerName;
 
     public Book(String title, String author, String publisher, String genre, String language, int numberOfPage) {
         this.title = title;
@@ -46,16 +46,20 @@ public class Book extends AbstractEntity implements Comparable<Book> {
         return numberOfPage;
     }
 
-    public boolean isIsaAvailable() {
+    public boolean isIsAvailable() {
         return isAvailable;
     }
 
-    public void setIsaAvailable(boolean isaAvailable) {
-        this.isAvailable = isaAvailable;
+    public void setIsAvailable(boolean isAvailable) {
+        this.isAvailable = isAvailable;
     }
 
     public String getBorrowerName() {
         return borrowerName;
+    }
+
+    public void setBorrowerName(String borrowerName) {
+        this.borrowerName = borrowerName;
     }
 
     @Override
