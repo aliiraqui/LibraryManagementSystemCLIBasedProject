@@ -8,7 +8,7 @@ public interface LibraryAction {
 
     void addStudent(Student student);
 
-    void issueBook(int studentID, String title);
+    void borrowedBook(int studentID, String title);
 
     void returnBook(String title);
 
