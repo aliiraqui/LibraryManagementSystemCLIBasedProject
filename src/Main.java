@@ -34,20 +34,21 @@ public class Main {
                 case 1:
                     System.out.println("~~~ Adding new Book ~~~");
 
+                    obj.nextLine();
                     System.out.println("Enter the Book Title: ");
-                    String title = obj.next();
+                    String title = obj.nextLine();
 
                     System.out.println("Enter the Book Author: ");
-                    String author = obj.next();
+                    String author = obj.nextLine();
 
                     System.out.println("Enter the Book Publisher: ");
-                    String publisher = obj.next();
+                    String publisher = obj.nextLine();
 
                     System.out.println("Enter the Book Genre: ");
-                    String genre = obj.next();
+                    String genre = obj.nextLine();
 
                     System.out.println("Enter the Book Language: ");
-                    String language = obj.next();
+                    String language = obj.nextLine();
 
                     System.out.println("Enter the Number of Pages in the Book: ");
                     int numberOfPages = obj.nextInt();
@@ -58,14 +59,15 @@ public class Main {
                 case 2:
                     System.out.println("~~~ Adding new Student ~~~");
 
-                    System.out.println("Enter Student's Name: ");
-                    String studentName = obj.next();
-
-                    System.out.println("Enter Student's Email Address: ");
-                    String studentEmailAddress = obj.next();
-
                     System.out.println("Enter Student ID: ");
                     int studentID = obj.nextInt();
+                    obj.nextLine();
+
+                    System.out.println("Enter Student's Name: ");
+                    String studentName = obj.nextLine();
+
+                    System.out.println("Enter Student's Email Address: ");
+                    String studentEmailAddress = obj.nextLine();
 
                     System.out.println("Enter Student's Grade: ");
                     int grade = obj.nextInt();
