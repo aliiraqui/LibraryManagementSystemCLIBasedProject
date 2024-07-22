@@ -11,7 +11,7 @@ public interface LibraryAction {
 
     void addTeacher(Teacher teacher);
 
-    void borrowedBook(int studentID, String title);
+    void issueBook(int studentID, String title);
 
     void returnBook(String title);
 
