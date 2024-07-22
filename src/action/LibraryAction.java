@@ -23,6 +23,10 @@ public interface LibraryAction {
 
     void searchBookByTittle(String title);
 
+    void searchStudentByName(String name);
+
+    void searchTeacherByName(String name);
+
     void sortBooks();
 
     void sortStudents();
