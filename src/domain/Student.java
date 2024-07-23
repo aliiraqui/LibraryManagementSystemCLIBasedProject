@@ -45,10 +45,10 @@ public class Student extends Person {
     }
 
     public void display() {
-        System.out.println("~~~ Student ~~~" +
-                "Student ID: " + studentID +
-                "Grade: " + grade +
-                "Borrowed Books: " + borrowedBooks +
+        System.out.println("~~~ Student ~~~\n" +
+                "Student ID: " + studentID + "\n" +
+                "Grade: " + grade + "\n" +
+                "Borrowed Books: " + borrowedBooks + "\n" +
                 "Total Fine Due: " + totalFineDue);
     }
 }
