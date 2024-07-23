@@ -21,6 +21,8 @@ public interface LibraryAction {
 
     void listAllTeacher();
 
+    void listAllBorrowedBooks();
+
     void searchBookByTittle(String title);
 
     void searchStudentByName(String name);
