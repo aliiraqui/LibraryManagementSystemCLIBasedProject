@@ -18,14 +18,16 @@ public class Main {
             System.out.println("Press 4 to Issue a Book to a Student");
             System.out.println("Press 5 to Return a Book");
             System.out.println("Press 6 to List All the Books that are there in the Library");
-            System.out.println("Press 7 to List All Registered Students");
-            System.out.println("Press 8 to List All Registered Teachers");
-            System.out.println("Press 9 to Search a Book by Title");
-            System.out.println("Press 10 to Search a Student by Name");
-            System.out.println("Press 11 to Search a Teacher by Name");
-            System.out.println("Press 12 to Sort the Books by Title");
-            System.out.println("Press 13 to Sort Students by Name");
-            System.out.println("Press 14 to Sort Teachers by Name");
+            System.out.println("Press 7 to List All the Issued Books");
+            System.out.println("Press 8 to List All the Books Available");
+            System.out.println("Press 9 to List All Registered Students");
+            System.out.println("press 10 to List All Registered Teachers");
+            System.out.println("Press 11 to Search a Book that is Available in the library by Title");
+            System.out.println("Press 12 to Search a Student by Name");
+            System.out.println("Press 13 to Search a Teacher by Name");
+            System.out.println("Press 14 to Sort the Books by Title");
+            System.out.println("Press 15 to Sort Students by Name");
+            System.out.println("Press 16 to Sort Teachers by Name");
             System.out.println("Press 0 to Exit");
             System.out.println("Enter your Choice: ");
             choice = obj.nextInt();
@@ -115,43 +117,49 @@ public class Main {
                     break;
 
                 case 7:
-                    library.listAllStudents();
                     break;
 
                 case 8:
-                    library.listAllTeacher();
                     break;
 
                 case 9:
+                    library.listAllStudents();
+                    break;
+
+                case 10:
+                    library.listAllTeacher();
+                    break;
+
+                case 11:
                     System.out.println("Enter the Book Title to Search: ");
                     String searchBookTitle = obj.next();
 
                     library.searchBookByTittle(searchBookTitle);
                     break;
 
-                case 10:
+                case 12:
                     System.out.println("Enter the Student Name to Search: ");
                     String searchStudentName = obj.next();
 
                     library.searchStudentByName(searchStudentName);
                     break;
 
-                case 11:
+                case 13:
                     System.out.println("Enter the Teacher Name to Search: ");
                     String searchTeacherName = obj.next();
 
                     library.searchTeacherByName(searchTeacherName);
                     break;
 
-                case 12:
+                case 14:
                     library.sortBooks();
                     break;
 
-                case 13:
+                case 15:
                     library.sortStudents();
                     break;
 
-                case 14:
+                case 16:
                     library.sortTeacher();
                     break;
             }
